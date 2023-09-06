@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Open+Sans:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url("./images/img1.jpg");
+    position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav {
+    width: 100%;
+    min-height: 15vh;
+    padding: 0px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 20px 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+}
+
+nav ul li a:hover{
+    color: #64CCC5;
+    transition: 0.5s ease;
+}
+
+nav ul li .active{
+    color: #64CCC5;
+}
+
+nav .logo{
+    margin-top: 10px;
+
+}
+
+nav .logo a{
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+
+nav .toggle{
+    font-size: 25px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+.content{
+    width: 100%;
+    min-height: 85vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 80px;
+}
+
+.article h1{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.article p{
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 50px;
+    opacity: 0.3;
+}
+
+.article .button a{
+    font-size: 15px;
+   
+    color: #176B87;
+    padding: 14px 25px;
+    border: 2px solid #176B87;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.article .button a:hover{
+    background-color: #176B87;
+    color: #fff;
+}
+
+.property img{
+    max-width: 100%;
+    height: auto;
+    padding-top: 20px;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+.contact-info {
+   
+    padding: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.contact-form {
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button[type="submit"] {
+    background-color: #176B87;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #13546B;
+}
+
+@media screen and (max-width: 800px){
+    .wrapper{
+        width: 100%;
+    }
+    nav{
+        padding: 20px 40px;
+    }
+    nav .logo a{
+        font-size: 25px;
+    }
+    nav ul{
+        display: none;
+        justify-content: center;
+        flex-direction: column;
+    }
+    nav ul li{
+        padding: 12px 0px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    nav .toggle{
+        display: flex;
+        z-index: 1;
+    }
+    .content {
+        width: 100%;
+        padding: 0px 40px;
+    }
+    .article h1{
+        font-size: 42px;
+    }
+    
+    .article p{
+        font-size: 30px;
+    }
+
+    .article .button a{
+        padding: 12px 20px;
+    }
+    nav ul.active{
+        top: 0;
+        left: 0;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #64CCC5;
+    }
+}
+@media screen and (max-width: 500px) {
+    nav .logo a{
+        font-size: 20px;
+    } .article h1{
+        font-size: 32px;
+    }
+    .article p{
+        font-size: 14px;
+    }
+    .article .button a{
+        font-size: 15px;
+        padding: 12px 20px;
+    }
+    
+}
